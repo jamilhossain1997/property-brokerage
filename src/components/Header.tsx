@@ -25,8 +25,7 @@ export const Header: React.FC<HeaderProps> = ({
   ];
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 dark:bg-stone-950/95 backdrop-blur-md border-b border-stone-200/80 dark:border-stone-800 transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-40 bg-[#FAF9F6]/95 dark:bg-stone-950/95 backdrop-blur-md border-b border-[#EAE7DF] dark:border-stone-800 transition-colors">      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-6 h-20">
           {/* Company Official Logo Lockup (Clean, text logo removed per user request) */}
           <div className="flex items-center shrink-0">

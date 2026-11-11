@@ -33,33 +33,9 @@ export default function App() {
   const [contactReason, setContactReason] = useState<string | undefined>(undefined);
 
   // Theme Management (Light / Dark mode)
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    try {
-      const savedTheme = localStorage.getItem('pb_theme');
-      if (savedTheme === 'dark' || savedTheme === 'light') return savedTheme;
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    } catch {
-      return 'light';
-    }
-  });
+  
 
-  useEffect(() => {
-    const root = document.documentElement;
-    if (theme === 'dark') {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
-    try {
-      localStorage.setItem('pb_theme', theme);
-    } catch {
-      // ignore
-    }
-  }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
-  };
 
   const [favorites, setFavorites] = useState<string[]>(() => {
     try {
@@ -86,7 +62,6 @@ export default function App() {
     onlyVerified: false,
   });
 
-  // Keep favorites persisted
   useEffect(() => {
     try {
       localStorage.setItem('brokeragebd_favs', JSON.stringify(favorites));

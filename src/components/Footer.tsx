@@ -18,12 +18,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenListWizard, on
               <div className="h-10 bg-white px-2 py-1 rounded-xl flex items-center shadow-xs">
                 <img
                   src="/assets/aistudio/image_f68ad9a3.png"
-                  alt="Property Brokerage BD Logo"
+                  alt="Logo"
                   className="h-7 w-auto object-contain"
                 />
               </div>
               <span className="text-xl font-extrabold tracking-tight text-white font-display">
-                Property Brokerage <span className="text-blue-500">BD</span>
+                 <span className="text-blue-500"></span>
               </span>
             </div>
 

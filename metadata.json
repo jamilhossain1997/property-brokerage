@@ -1,0 +1,6 @@
+{
+  "name": "Property Brokerage BD",
+  "description": "Dhaka's premier real estate brokerage for verified residential apartments, luxury penthouses, duplexes, and commercial spaces with complete title deed vetting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

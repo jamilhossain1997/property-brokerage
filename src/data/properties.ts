@@ -1,5 +1,10 @@
 import { Property, NeighborhoodData } from '../types/property';
 
+import gulshanImage from '../assets/images/property_gulshan_penthouse_1794372879047.jpg';
+import bashundharaImage from '../assets/images/property_bashundhara_residence_1794372879970.jpg';
+import dhanmondiImage from '../assets/images/property_dhanmondi_duplex_1794372879691.jpg';
+import heroImage from '../assets/images/hero_dhaka_luxury_apartment_1794372878497.jpg';
+
 export const INITIAL_PROPERTIES: Property[] = [
   {
     id: 'prop-gulshan-penthouse',
@@ -39,11 +44,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       '24/7 Monitored CCTV Security',
       'Rooftop Infinity Swimming Pool',
     ],
-    images: [
-      '/src/assets/images/property_gulshan_penthouse_1794372879047.jpg',
-      '/src/assets/images/hero_dhaka_luxury_apartment_1794372878497.jpg',
-      '/src/assets/images/property_dhanmondi_duplex_1794372879691.jpg',
-    ],
+    images: [gulshanImage, heroImage, dhanmondiImage],
     featured: true,
     exclusive: true,
     verified: true,

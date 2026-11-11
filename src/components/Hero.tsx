@@ -1,7 +1,7 @@
 import React from 'react';
 import { Search, MapPin, Building, ShieldCheck, CheckCircle2, ChevronRight } from 'lucide-react';
 import { ListingType } from '../types/property';
-
+import heroImage from '../assets/images/hero_dhaka_luxury_apartment_1794372878497.jpg';
 interface HeroProps {
   listingType: ListingType;
   setListingType: (type: ListingType) => void;
@@ -52,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Background Architectural Imagery - Highly Visible with Soft Balancing Scrim */}
       <div className="absolute inset-0">
         <img
-          src="/src/assets/images/hero_dhaka_luxury_apartment_1794372878497.jpg"
+          src={heroImage}
           alt="Modern luxury residential architecture in Dhaka"
           className="w-full h-full object-cover opacity-85 scale-102 transition-transform duration-1000 ease-out"
           referrerPolicy="no-referrer"
